@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency Attitudes Survey</title>
+</head>
+
+<body>
+
+    <!--This survey form aims to find out attitudes towards crypto trading and investment-->
+    <!--completed tasks: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16-->
+
+    <h1 id="title">The Cryptocurrency Attitudes Survey</h1>
+
+    <p id="description">Welcome to the Cryptocurrency attitudes survey form. <br> Please answer all questions honestly
+        so we can provide you with accurate results about your Crypto personality!</p>
+
+    <form id="survey-form" action="">
+        <ul>
+
+            <!--Form elements should go in li tags for easier styling-->
+            <!-- questions to ask = own any? views-->
+
+            <li>
+                <label for="name" id="name-label">Name</label><br>
+                <input type="text" id="name" name="name" placeholder="Name" required><br>
+            </li>
+
+            <li>
+                <label for="email" id="email-label">E-mail</label><br>
+                <input type="email" id="email" name="user_email" placeholder="Your Email" required><br>
+            </li>
+
+            <li>
+                <label for="radio">Please select your age range</label> <br>
+                <input type="radio" id="age" name="age-range" value="0 - 18">
+                <label for="0 - 18">0 - 18</label><br>
+
+                <input type="radio" id="age" name="age-range" value="18 - 35">
+                <label for="18 - 35">18 - 35</label><br>
+
+                <input type="radio" id="age" name="age-range" value="35 - 60">
+                <label for="35 - 60">35 - 60</label><br>
+
+                <input type="radio" id="age" name="age-range" value="60 +">
+                <label for="60 +">60 +</label><br>
+            </li>
+
+            <li>
+                <label for="radio">Which Cryptocurrency would you be happy to hold for at least 3 years?</label> <br>
+                <input type="radio" id="low-risk" name="risk" value="low">
+                <label for="btc">Bitcoin and other established Cryptocurrencies</label><br>
+
+                <input type="radio" id="medium-risk" name="risk" value="medium">
+                <label for="ltc">Litecoin and other medium risk Cryptocurrencies</label><br>
+
+                <input type="radio" id="high-risk" name="risk" value="high">
+                <label for="squid">Squid coin and other high risk tokens</label><br>
+            </li>
+
+            <li>
+                <label for="quantity" id="number-label">How many single Cryptocurrencies are you planning to hold for
+                    over 3 years?<br> Please enter a figure. </label><br>
+                <input type="number" id="number" name="number_held" placeholder="3" min="0" max="100">
+            </li>
+
+            <li>
+                <div class="form-group">
+                    <p>Please select which best describes you</p>
+                    <select id="dropdown" name="attitude" class="form-control" required>
+                        <option disabled selected value>Select best option</option>
+                        <option value="panic">I panic buy and panic sell</option>
+                        <option value="logical">I make logical decisions</option>
+                        <option value="learner">I get analysis paralysis</option>
+                        <option value="preferNo">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+            <li>
+                <label for="checkbox">Which of these platforms have you used?</label> <br>
+
+                <input type="checkbox" id="coinbase" name="coinbase" value="coinbase">
+                <label for="Coinbase"> Coinbase </label><br>
+
+                <input type="checkbox" id="eToro" name="eToro" value="eToro">
+                <label for="eToro"> eToro </label><br>
+
+                <input type="checkbox" id="Kraken" name="Kraken" value="Kraken">
+                <label for="Kraken"> Kraken </label><br>
+            </li>
+
+            <li>
+                <label for="comments">Please enter comments or thoughts you've got regarding cryptocurrencies</label>
+
+                <textarea id="comments" name="comments" rows="10" cols="60"
+                    placeholder="Enter your text here"></textarea>
+            </li>
+
+            <input type="submit" value="Submit" id="submit">
+
+        </ul>
+    </form>
+
+</body>
+
+</html>
